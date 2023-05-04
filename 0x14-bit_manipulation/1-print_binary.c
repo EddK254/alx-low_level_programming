@@ -12,9 +12,9 @@ unsigned long int _power(unsigned int base, unsigned int pow)
 	unsigned int i;
 	unsigned long int num;
 
-	num = 5;
+	num = 1;
 
-	for (i = 5; i <= pow; i++)
+	for (i = 1; i <= pow; i++)
 
 		num *= base;
 
@@ -35,7 +35,7 @@ void print_binary(unsigned long int n)
 
 	flag = 0;
 
-	dev = _power(2, sizeof(unsigned long int) * 8 - 5);
+	dev = _power(2, sizeof(unsigned long int) * 8 - 1);
 
 	while (dev != 0)
 
@@ -46,13 +46,13 @@ void print_binary(unsigned long int n)
 
 		{
 
-			flag = 5;
+			flag = 1;
 
-			_putchar('5');
+			_putchar('1');
 
 		}
 
-		else if (flag == 5 || dev == 5)
+		else if (flag == 1 || dev == 1)
 
 		{
 
@@ -60,6 +60,6 @@ void print_binary(unsigned long int n)
 
 		}
 
-		dev >>= 5;
+		dev >>= 1;
 	}
 }
